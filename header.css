@@ -1,0 +1,348 @@
+body{
+    margin: 0;
+    padding-top: 100px;
+    background-color: rgb(229, 229, 229);
+    overflow-x: hidden;
+}
+.header{
+    position: fixed;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgb(205, 205, 205);
+    background-color: white;
+}
+.left-header{
+    display: flex;
+    align-items: center;
+}
+.flipkart-plus-logo{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.flipkart-plus-logo img{
+    width: 130px;
+}
+.middle-header{
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.search-bar-section{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    padding-right: 0;
+}
+.search-icon-box{
+    height: 37px;
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-icon-box img{
+    height: 25px;
+    padding-right: 10px;
+    padding-left: 8px;
+}
+.search-bar-box{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin-left: -8px;
+}
+.search-bar{
+    height: 35px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    background-color: lightgrey;
+    border: none;
+    border-radius: 5px;
+    width: 0;
+    padding-right: 0;
+}
+.search-bar::placeholder{
+    font-size: 16px;
+}
+
+.right-header{
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.seller-container{
+    background-color: white;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    padding-left: 5px;
+    border-radius: 3px;
+    padding-right: 5px;
+    transition: 0.15s;
+}
+.seller-container:hover,
+.user-container:hover,
+.cart-container:hover,
+.threedot-container:hover{
+    background-color: rgb(226, 226, 226);
+}
+.seller-icon{
+    font-family: Arial;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+.seller-icon img{
+    height: 29px;
+}
+.seller-icon-text{
+    margin-left: 10px;
+}
+.user-container{
+    display: flex;
+    align-items: center;
+    font-family: Arial;
+    background-color: white;
+    font-size: 16px;
+    padding-left: 5px;
+    border-radius: 3px;
+    padding-right: 5px;
+    cursor: pointer;
+}
+.user-icon{
+    height: 29px;
+    padding-right: 10px;
+}
+.arrow-icon{
+    height: 12px;
+    padding-left: 5px;
+}
+.cart-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.cart-icon{
+    height: 29px;
+}
+.threedot-container{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 4px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.threedot-icon{
+    height: 29px;
+}
+
+.categories-container{
+display: flex;
+align-items: center;
+justify-content: space-around;
+background-color: white;
+padding: 0 50px;
+margin: 0 11px 20px 11px;
+}
+.categories-container p{
+    text-align: center;
+    font-family: Arial;
+    font-size: 14px;
+}
+.categories-container img{
+    padding-top: 8px;
+    margin: 0 auto;
+    width: 80px;
+}
+.offers,
+.mobile,
+.electronics,
+.tv,
+.fashion,
+.beauty,
+.home,
+.furniture,
+.flights,
+.grocery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+
+.image-slide-container{
+    margin-left: 11px;
+    margin-right: 11px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.image-slide-wrapper{
+    display: flex;
+    animation: slide 20s infinite;
+    width: 100%;
+}
+@keyframes slide{
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-100%);
+    }
+    40% {
+        transform: translateX(-100%);
+    }
+    45% {
+        transform: translateX(-200%);
+    }
+    60% {
+        transform: translateX(-200%);
+    }
+    65% {
+        transform: translateX(-300%);
+    }
+    80% {
+        transform: translateX(-300%);
+    }
+    85% {
+        transform: translateX(-400%);
+    }
+    100% {
+        transform: translateX(-400%);
+    }
+}
+.image-slide-container img{
+    width: 100%;
+}
+.sbi-card-container{
+    margin-top: 10px;
+    margin-left: 11px;
+    margin-right: 11px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+}
+.sbi-card-container img{
+    width: 100%;
+}
+
+.best-mobile-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: Arial;
+}
+.best-mobile-box{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: white;
+    margin: 25px 8px 0 11px;
+}
+.mobiles{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.pixel-7a,
+.samsung-s22,
+.poco-f5,
+.realme-11pro,
+.pixel-7,
+.realme-11x{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 13px 10px;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 3px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.nothing-right{
+    margin: 11px 11px 0 2px;
+    cursor: pointer;
+}
+.nothing-right img{
+    width: 230px;
+}
+.best-mobile-text-line{
+    display: flex;
+    justify-content: space-between;
+}
+.best-mobile-text{
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.arrow{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    margin: 20px 10px 0 0;
+    width: 22px;
+    height: 22px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: opacity 0.1s;
+}
+.arrow:hover{
+    opacity: 0.8;
+}
+.mobile-name{
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.include-offers{
+    margin-top: 2px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.last-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    margin: 20px 11px 0 11px;
+
+}
+.last-row img{
+    width: 475px;
+    cursor: pointer;
+}
